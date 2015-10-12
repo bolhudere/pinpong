@@ -24,7 +24,7 @@ def draw(c):
     paddle2_pos+=paddle2_vel
     ball_pos[0]+=ball_vel[0]
     ball_pos[1]+=ball_vel[1]
-    c.draw_text(str(score1),(185,60),40,"Red")
+    c.draw_text(str(score1),(185,60),40,"Blue")
     c.draw_text(str(score2),(400,60),40,"Red")
 
     if paddle1_pos-PAD_HEIGHT/2<0:
@@ -56,8 +56,8 @@ def draw(c):
 
     # draw mid line and gutters
     c.draw_line([WIDTH / 2, 0],[WIDTH / 2, HEIGHT], 1, "White")
-    c.draw_line([PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1, "White")
-    c.draw_line([WIDTH-PAD_WIDTH, 0],[WIDTH-PAD_WIDTH, HEIGHT], 1, "White")
+    c.draw_line([PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1, "Green")
+    c.draw_line([WIDTH-PAD_WIDTH, 0],[WIDTH-PAD_WIDTH, HEIGHT], 1, "Green")
     c.draw_line([PAD_WIDTH/2, paddle1_pos-PAD_HEIGHT/2],[PAD_WIDTH/2, paddle1_pos+PAD_HEIGHT/2], PAD_WIDTH, "White")
     c.draw_line([WIDTH, paddle2_pos-PAD_HEIGHT/2],[WIDTH, paddle2_pos+PAD_HEIGHT/2], PAD_WIDTH, "White")
     # draw ball and scores
